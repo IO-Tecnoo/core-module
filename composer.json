@@ -8,9 +8,16 @@
             "email": "sewidanmostafa@gmail.com"
         }
     ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sewidan\\CoreModule\\CoreModuleServiceProvider"
+            ]
+        }
+    },
    "autoload": {
         "psr-4": {
-            "Sewidan\\Core\\": "src/"
+            "Sewidan\\CoreModule\\": "src/"
         }
     }
 }

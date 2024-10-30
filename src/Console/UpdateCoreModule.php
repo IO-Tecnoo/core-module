@@ -1,6 +1,6 @@
 <?php
 
-namespace Sewidan\Core\Console;
+namespace Sewidan\CoreModule\Console;
 
 use Illuminate\Console\Command;
 use File;

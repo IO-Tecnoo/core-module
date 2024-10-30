@@ -1,10 +1,10 @@
 <?php
-namespace Sewidan\Core;
+namespace Sewidan\CoreModule;
 
 use Illuminate\Support\ServiceProvider;
-use Sewidan\Core\Console\UpdateCoreModule;
+use Sewidan\CoreModule\Console\UpdateCoreModule;
 
-class CoreServiceProvider extends ServiceProvider
+class CoreModuleServiceProvider extends ServiceProvider
 {
     public function register()
     {
