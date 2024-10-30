@@ -17,14 +17,13 @@
         }
     },
     "scripts": {
-        "scripts": {
-            "post-install-cmd": [
-                "@php artisan vendor:publish --tag=core --force",
-                "php scripts/install.php"
-            ],
-            "post-update-cmd": [
-                "php scripts/install.php"
-            ]
-        }
+        "post-install-cmd": [
+            "@php artisan vendor:publish --tag=core --force",
+            "php %vendor-dir%/sewidan/core/scripts/install.php"
+        ],
+        "post-update-cmd": [
+            "php %vendor-dir%/sewidan/core/scripts/install.php"
+        ]
     }
+
 }
