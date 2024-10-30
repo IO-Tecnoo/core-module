@@ -8,22 +8,17 @@
             "email": "sewidanmostafa@gmail.com"
         }
     ],
-    "extra": {
-        "laravel": {
-            "providers": [],
-            "aliases": {
-
-            }
+    "autoload": {
+        "psr-4": {
+            "Sewidan\\Core\\": "src/"
         }
     },
     "scripts": {
         "post-install-cmd": [
-            "@php artisan vendor:publish --tag=core --force",
             "php %vendor-dir%/sewidan/core/scripts/install.php"
         ],
         "post-update-cmd": [
             "php %vendor-dir%/sewidan/core/scripts/install.php"
         ]
     }
-
 }
