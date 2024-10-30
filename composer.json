@@ -10,10 +10,10 @@
     ],
     "scripts": {
         "post-install-cmd": [
-            "php %vendor-dir%/sewidan/core/scripts/install.php"
+            "php core/scripts/install.php"
         ],
         "post-update-cmd": [
-            "php %vendor-dir%/sewidan/core/scripts/install.php"
+            "php core/scripts/install.php"
         ]
     }
 }
