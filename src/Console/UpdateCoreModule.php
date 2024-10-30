@@ -12,7 +12,7 @@ class UpdateCoreModule extends Command
 
     public function handle()
     {
-        $sourceDir = __DIR__ . '/../Core'; // Path to the Core directory in your package
+        $sourceDir = __DIR__ . '/../../Core'; // Path to the Core directory in your package
         $targetDir = base_path('Modules/Core'); // Path to the target directory
 
         // Check if the target directory exists and delete it
