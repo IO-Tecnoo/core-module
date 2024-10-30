@@ -8,11 +8,6 @@
             "email": "sewidanmostafa@gmail.com"
         }
     ],
-    "autoload": {
-        "psr-4": {
-            "Sewidan\\Core\\": "src/"
-        }
-    },
     "scripts": {
         "post-install-cmd": [
             "php %vendor-dir%/sewidan/core/scripts/install.php"
@@ -20,5 +15,9 @@
         "post-update-cmd": [
             "php %vendor-dir%/sewidan/core/scripts/install.php"
         ]
+    },
+    "require": {
+        "php": "^7.3|^8.0",
+        "illuminate/support": "^8.0|^9.0|^10.0"
     }
 }
