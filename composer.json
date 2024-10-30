@@ -4,8 +4,8 @@
     "description": "Core Module for applications",
     "authors": [
         {
-            "name": "Nicolas Widart",
-            "email": "n.widart@gmail.com"
+            "name": "Mostafa Sewidan",
+            "email": "sewidanmostafa@gmail.com"
         }
     ],
     "extra": {
@@ -16,16 +16,14 @@
             }
         }
     },
-    "autoload": {
-        "psr-4": {
-            "Modules\\Core\\": "app/",
-            "Modules\\Core\\Database\\Factories\\": "database/factories/",
-            "Modules\\Core\\Database\\Seeders\\": "database/seeders/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Modules\\Core\\Tests\\": "tests/"
+    "scripts": {
+        "scripts": {
+            "post-install-cmd": [
+                "php -r \"copy('vendor/sewidan/core/Core', realpath(__DIR__ . '/../Modules/Core'));\""
+            ],
+            "post-update-cmd": [
+                "php -r \"copy('vendor/sewidan/core/Core', realpath(__DIR__ . '/../Modules/Core'));\""
+            ]
         }
     }
 }
