@@ -19,10 +19,10 @@
     "scripts": {
         "scripts": {
             "post-install-cmd": [
-                "php -r \"copy('vendor/sewidan/core/Core', realpath(__DIR__ . '/../Modules/Core'));\""
+                "php scripts/install.php"
             ],
             "post-update-cmd": [
-                "php -r \"copy('vendor/sewidan/core/Core', realpath(__DIR__ . '/../Modules/Core'));\""
+                "php scripts/install.php"
             ]
         }
     }
