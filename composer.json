@@ -10,10 +10,10 @@
     ],
     "scripts": {
         "post-install-cmd": [
-            "php core/scripts/install.php"
+            "php scripts/install.php"
         ],
         "post-update-cmd": [
-            "php core/scripts/install.php"
+            "php scripts/install.php"
         ]
     }
 }
