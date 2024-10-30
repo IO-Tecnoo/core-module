@@ -1,3 +1,4 @@
+<?php
 namespace Sewidan\Core;
 
 use Illuminate\Support\ServiceProvider;
