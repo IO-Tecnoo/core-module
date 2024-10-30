@@ -19,6 +19,7 @@
     "scripts": {
         "scripts": {
             "post-install-cmd": [
+                "@php artisan vendor:publish --tag=core --force",
                 "php scripts/install.php"
             ],
             "post-update-cmd": [
